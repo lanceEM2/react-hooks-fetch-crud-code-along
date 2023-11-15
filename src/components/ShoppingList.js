@@ -34,7 +34,7 @@ function ShoppingList() {
 
   // a callback f(x) passed as a prop so that ItemForm component can send the new item up to the ShoppingList component
   function handleAddItem(newItem) {
-    console.log([...items], newItem);
+    setItems([...items], newItem);
   }
 
   function handleCategoryChange(category) {
